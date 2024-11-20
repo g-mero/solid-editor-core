@@ -1,0 +1,65 @@
+{
+  "name": "solid-editor-core",
+  "type": "module",
+  "version": "1.0.2",
+  "private": false,
+  "description": "A simple unstyled editor based on SolidJS and CodeMirror6",
+  "homepage": "https://github.com/g-mero/solid-editor-core",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "solid": "./dist/index.jsx",
+      "default": "./dist/index.js"
+    },
+    "./themes": {
+      "types": "./dist/themes/index.d.ts",
+      "solid": "./dist/themes/index.jsx",
+      "default": "./dist/themes/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {},
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "after-build": "node ./scripts/after-build.mjs",
+    "build": "tsup && pnpm after-build",
+    "pub": " pnpm build && cd dist && pnpm publish",
+    "release": "commit-and-tag-version -i CHANGELOG.md --same-file",
+    "prepare": "husky"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.9.0"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.7.1",
+    "@codemirror/lang-markdown": "^6.3.1",
+    "@codemirror/language": "^6.10.8",
+    "@codemirror/language-data": "^6.5.1",
+    "@codemirror/state": "^6.5.0",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.36.1",
+    "@lezer/highlight": "^1.2.1",
+    "codemirror": "^6.0.1",
+    "solid-uses": "^0.8.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.12.1",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "commit-and-tag-version": "^12.5.0",
+    "esbuild-plugin-solid": "^0.6.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-solid": "^0.14.5",
+    "fs-extra": "^11.2.0",
+    "husky": "^9.1.7",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6",
+    "vite-plugin-solid": "^2.11.0"
+  }
+}

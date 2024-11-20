@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + Solid</title>
+  <link rel="stylesheet" href="docs/global.css" />
+</head>
+
+<body style="background-color: blanchedalmond">
+  <div id="app" style="max-width: 600px; margin: 3rem auto 0"></div>
+
+  <!-- <script src="https://cdn.staticfile.org/markdown-it/13.0.1/markdown-it.min.js"></script> -->
+  <script type="module">
+    import { Editor } from '/src/dev.tsx'
+
+    let theme = 'light'
+    const editor = Editor({
+      target: document.querySelector('#app'),
+    })
+
+
+  </script>
+</body>
+
+</html>
