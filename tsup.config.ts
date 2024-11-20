@@ -9,7 +9,7 @@ function generateConfig(jsx: boolean): Options {
     format: 'esm',
     clean: true,
     dts: !jsx,
-    entry: ['src/index.tsx', 'src/*/index.ts'],
+    entry: ['src/index.tsx', 'src/*/index.ts', 'src/themes/index.ts'],
     outDir: 'dist/',
     treeshake: { preset: 'smallest' },
     replaceNodeEnv: true,

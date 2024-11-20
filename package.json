@@ -1,7 +1,7 @@
 {
   "name": "solid-editor-core",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "A simple unstyled editor based on SolidJS and CodeMirror6",
   "homepage": "https://github.com/g-mero/solid-editor-core",
@@ -11,10 +11,10 @@
       "solid": "./dist/index.jsx",
       "default": "./dist/index.js"
     },
-    "./*": {
-      "types": "./dist/*/index.d.ts",
-      "solid": "./dist/*/index.jsx",
-      "default": "./dist/*/index.js"
+    "./themes": {
+      "types": "./dist/themes/index.d.ts",
+      "solid": "./dist/themes/index.jsx",
+      "default": "./dist/themes/index.js"
     }
   },
   "main": "./dist/index.js",

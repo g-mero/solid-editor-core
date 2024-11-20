@@ -7,7 +7,7 @@ import { keymap } from '@codemirror/view'
 import { EditorView, minimalSetup } from 'codemirror'
 import { createEffect, onMount } from 'solid-js'
 import { watch } from 'solid-uses'
-import { basicLight } from './theme-light'
+import { basicLight } from '../../themes'
 
 export function CodeMirror(props: {
   setcm: (cm: EditorView) => void
