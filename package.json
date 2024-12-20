@@ -1,7 +1,7 @@
 {
   "name": "solid-editor-core",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "A simple unstyled editor based on SolidJS and CodeMirror6",
   "homepage": "https://github.com/g-mero/solid-editor-core",
@@ -42,24 +42,27 @@
     "@codemirror/view": "^6.34.3",
     "@lezer/highlight": "^1.2.1",
     "codemirror": "^6.0.1",
-    "solid-uses": "^0.6.0"
+    "solid-uses": "^0.8.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.9.2",
     "@iconify-json/ri": "^1.2.3",
     "@lezer/markdown": "^1.3.2",
     "@types/node": "^22.9.1",
-    "@unocss/reset": "^0.64.1",
-    "@unocss/vite": "^0.64.1",
+    "@unocss/reset": "^0.65.2",
+    "@unocss/vite": "^0.65.2",
     "esbuild-plugin-solid": "^0.6.0",
     "eslint": "^9.15.0",
     "eslint-plugin-solid": "^0.14.4",
-    "jige-core": "^0.15.0",
-    "jige-ui": "^0.15.4",
+    "jige-core": "^0.30.3",
+    "jige-ui": "^0.20.1",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3",
-    "unocss": "^0.64.1",
-    "vite": "^5.4.11",
-    "vite-plugin-solid": "^2.10.2"
+    "unocss": "^0.65.2",
+    "vite": "^6.0.4",
+    "vite-plugin-solid": "^2.11.0"
+  },
+  "resolutions": {
+    "esbuild": "0.24.0"
   }
 }

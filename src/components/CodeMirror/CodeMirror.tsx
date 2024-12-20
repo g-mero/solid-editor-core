@@ -31,6 +31,7 @@ export function CodeMirror(props: {
       doc: '',
       extensions: [
         minimalSetup,
+        EditorView.lineWrapping,
         keymap.of([]),
         markdown({ codeLanguages: languages }),
         // eslint-disable-next-line solid/reactivity
