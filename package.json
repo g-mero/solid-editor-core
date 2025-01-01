@@ -1,7 +1,7 @@
 {
   "name": "solid-editor-core",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "A simple unstyled editor based on SolidJS and CodeMirror6",
   "homepage": "https://github.com/g-mero/solid-editor-core",
